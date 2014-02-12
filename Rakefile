@@ -1,26 +1,17 @@
-require "rake"
+require 'foodcritic'
+require 'rspec/core/rake_task'
+require 'rubocop/rake_task'
 
-def cookbook_name
-  require "chef/cookbook/metadata"
+FoodCritic::Rake::LintTask.new
 
-  metadata = Chef::Cookbook::Metadata.new
-  metadata.from_file "metadata.rb"
-
-  ENV['COOKBOOK_NAME'] = metadata.name
+RSpec::Core::RakeTask.new(:unit) do |t|
+  t.rspec_opts = [].tap do |a|
+    a.push('--color')
+    a.push('--format progress')
+  end.join(' ')
 end
 
-task :setup do
-  sh "bundle install --path=.bundle/"
-  sh "bundle exec berks install --path=.cookbooks/"
-  cookbook_name
-end
+Rubocop::RakeTask.new
 
-task :lint do
-  sh "bundle exec foodcritic -f any .cookbooks/#{ENV['COOKBOOK_NAME']}"
-end
-
-task :unit do
-  sh "bundle exec rspec .cookbooks/#{ENV['COOKBOOK_NAME']}/spec"
-end
-
-task :default => [:setup, :lint, :unit]
+task test: [:unit, :foodcritic, :rubocop]
+task default: [:test]

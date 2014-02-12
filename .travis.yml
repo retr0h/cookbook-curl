@@ -1,6 +1,3 @@
-language: ruby
 rvm:
   - 1.9.3
-before_script:
-  - "bundle install --path=.bundle/"
-script: bundle exec rake
+  - 2.1.0
