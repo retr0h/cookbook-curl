@@ -1,1 +1,7 @@
-cookbook 'curl', :path => '/home/jdewey/git/cookbook-curl'
+{
+  "sources": {
+    "curl": {
+      "path": "."
+    }
+  }
+}

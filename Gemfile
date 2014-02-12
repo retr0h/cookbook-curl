@@ -1,9 +1,8 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "rake"
-gem "chef", "~> 11.4.4"
-gem "json", "<= 1.7.7" # chef dependency
-gem "berkshelf", "~> 1.4.5"
-gem "chefspec", "~> 1.2.0"
-gem "foodcritic"
-gem "strainer"
+gem 'berkshelf', '~> 2.0'
+gem 'chef', '~> 11.10'
+gem 'chefspec', '~> 3.2'
+gem 'foodcritic', '~> 3.0'
+gem 'rake', '~> 10.1'
+gem 'rubocop', '~> 0.18'
