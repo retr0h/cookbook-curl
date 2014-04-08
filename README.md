@@ -14,6 +14,8 @@ Requirements
 Attributes
 ==========
 
+* `default['curl']['libcurl_packages']` - A list of libcurl packages to install.
+
 Usage
 =====
 
@@ -27,6 +29,11 @@ default
 -------
 
 Installs/Configures curl
+
+libcurl
+-------
+
+Install/Configure libcurl packages
 
 Testing
 =======
