@@ -33,6 +33,12 @@ Installs/Configures curl
 libcurl
 -------
 
+```json
+"run_list": [
+    "recipe[curl::libcurl]"
+]
+```
+
 Install/Configure libcurl packages
 
 Testing

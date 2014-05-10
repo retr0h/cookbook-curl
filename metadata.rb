@@ -9,6 +9,8 @@ version '2.0.0'
 recipe 'curl', 'Installs/Configures curl'
 recipe 'libcurl', 'Install/Configure libcurl packages'
 
+provides 'curl::libcurl'
+
 supports 'centos'
 supports 'debian'
 supports 'fedora'
