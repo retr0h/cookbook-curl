@@ -4,7 +4,7 @@ require_relative 'spec_helper'
 
 describe 'curl::libcurl' do
   let(:chef_run) do
-    ChefSpec::Runner.new(DEBIAN_OPTS)
+    ChefSpec::ServerRunner.new(DEBIAN_OPTS)
       .converge(described_recipe)
   end
 
