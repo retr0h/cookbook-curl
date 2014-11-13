@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/retr0h/cookbook-curl.png?branch=master)](https://travis-ci.org/retr0h/cookbook-curl)
-[![Dependency Status](https://gemnasium.com/retr0h/cookbook-curl.png)](https://gemnasium.com/retr0h/cookbook-curl)
+[![Build Status](http://img.shields.io/travis/retr0h/cookbook-curl.svg?style=flat-square)](https://travis-ci.org/retr0h/cookbook-curl)
+[![Dependency Status](http://img.shields.io/gemnasium/retr0h/cookbook-curl.svg?style=flat-square)](https://gemnasium.com/retr0h/cookbook-curl)
+[![Chef](http://img.shields.io/cookbook/v/curl.svg?style=flat-square)](https://supermarket.getchef.com/cookbooks/curl)
 
 Description
 ============
