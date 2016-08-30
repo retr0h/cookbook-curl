@@ -8,8 +8,8 @@ require 'chefspec/deprecations'
 ::RHEL_OPTS = {
   platform: 'redhat',
   version: '6.3'
-}
+}.freeze
 DEBIAN_OPTS = {
   platform: 'ubuntu',
   version: '12.04'
-}
+}.freeze
