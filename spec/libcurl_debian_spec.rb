@@ -4,8 +4,7 @@ require_relative 'spec_helper'
 
 describe 'curl::libcurl' do
   let(:chef_run) do
-    ChefSpec::ServerRunner.new(DEBIAN_OPTS)
-      .converge(described_recipe)
+    ChefSpec::SoloRunner.new(DEBIAN_OPTS).converge(described_recipe)
   end
 
   it 'installs packages' do
