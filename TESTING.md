@@ -1,0 +1,4 @@
+Testing
+=======
+
+    $ bundle exec rake

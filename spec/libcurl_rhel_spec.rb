@@ -1,5 +1,3 @@
-# encoding: UTF-8
-
 require_relative 'spec_helper'
 
 describe 'curl::libcurl' do
@@ -8,7 +6,7 @@ describe 'curl::libcurl' do
   end
 
   it 'installs package' do
-    %w(curl-devel).each do |pkg|
+    %w[curl-devel].each do |pkg|
       expect(chef_run).to upgrade_package pkg
     end
   end

@@ -1,9 +1,7 @@
-# encoding: UTF-8
-#
 # Cookbook Name:: curl
 # Recipe:: default
 #
-# Copyright 2012-2016, John Dewey
+# Copyright 2012-2018, John Dewey
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +18,7 @@
 
 case node['platform_family']
 when 'debian'
-  default['curl']['libcurl_packages'] = %w(libcurl3 libcurl4-openssl-dev)
+  default['curl']['libcurl_packages'] = %w[libcurl3 libcurl4-openssl-dev]
 when 'rhel'
-  default['curl']['libcurl_packages'] = %w(curl-devel)
+  default['curl']['libcurl_packages'] = %w[curl-devel]
 end

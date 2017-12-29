@@ -3,6 +3,9 @@ AllCops:
     - ./**/*.rb
   Exclude:
     - vendor/**/*
+    - Berksfile
+    - Gemfile
+    - Rakefile
 
 Encoding:
   Exclude:
