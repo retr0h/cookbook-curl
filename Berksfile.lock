@@ -4,4 +4,4 @@ DEPENDENCIES
     metadata: true
 
 GRAPH
-  curl (2.0.3)
+  curl (2.0.4)
